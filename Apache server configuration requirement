@@ -1,0 +1,34 @@
+Apache server 
+	Virtual Machine (webtek2017.ova): installed - apache and apache utilities
+
+	configuration process:
+		directory: /etc/apache2
+					list of directories to be used in the configuration:
+						apache2.conf - main apache2 configuration file. *configuration of the file is not recommended
+						*you may use the following files for configuration
+						sites-available
+						sites-enable (holds symbolic links to the sites-available)
+						conf-available
+						conf-enabled (holds symbolic links to the conf-available)
+						mods-available
+						mods-enable(holds symbolic links to the mods-availble)
+
+						for more detailed information: https://help.ubuntu.com/lts/serverguide/httpd.html
+						enabling modules, sites and conf, you may refer to the apache default page. "bold faced commands".
+
+						virtual hosting (i think)
+						*configuration directory - -/var/www/html
+						 use htaccess file.
+
+						 edit host file:  C/windows/system32/drivers/etc/hosts 
+						 	 override the DNS for a domain
+
+	requirement:
+		*virtual hosts (individual)
+		*content compression, caching, negotiation
+		*authentication and authorization
+		*access control (access restriction)
+		*server-side inclueds (SSI)
+		*URL rewriting
+		*SSL/TLS encryption (http to https)
+
